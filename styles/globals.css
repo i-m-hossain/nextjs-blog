@@ -8,23 +8,12 @@ body {
   font-size: 18px;
 }
 
-* {
-  box-sizing: border-box;
-}
 
-a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-img {
-  max-width: 100%;
-  display: block;
-}
-button {
-  background-color: red;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base{
+  ul {
+   @apply list-disc;
+  }
+ }
